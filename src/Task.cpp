@@ -6,9 +6,8 @@ Task::Task(
     const Category category
 ) : name(name),
     description(description),
-    category(category) {
-    this->isDone = false;
-}
+    category(category),
+    isDone(false) {}
 
 void Task::save() const {
 }

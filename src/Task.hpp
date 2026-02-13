@@ -23,7 +23,7 @@ public:
 
     void save() const;
     void del() const;
-    void addSubTasks(const Task task) { this->subTasks.insert(task); };
+    void addSubTasks(const Task& task) { this->subTasks.push_back(task); };
     void done() { this->isDone = true; }
 
     // Getters e Setters:
@@ -31,7 +31,7 @@ public:
     std::string getDescription() const { return description; }
     Category getCategory() const { return category; }
     std::vector<Task> getSubTasks() const { return subTasks; }
-    bool isDone() const { return isDone; }
+    bool getIsDone() const { return isDone; }
 };
 
 #endif
